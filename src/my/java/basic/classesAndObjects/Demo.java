@@ -6,21 +6,26 @@ package my.java.basic.classesAndObjects;
  */
 public class Demo {
   public static void main(String[] args) {
-    AClass object1 = new AClass(100);
-    AClass object2 = new AClass(100);
+    Car object1 = new Car(100);
+    Car object2 = new Car(100);
 
-    methodWithParam(object1, 50);
-    methodWithParam(object2.aField, 50);
+    assignNewValue(object1, 50);
+    assignNewValue(object2.tankCapacity, 50);
 
-    System.out.println(object1.aField);
-    System.out.println(object2.aField);
+    System.out.println(object1.tankCapacity);
+    System.out.println(object2.tankCapacity);
+
+    //    assignNewValue(object1, 10);
+    //    assignNewValue(object2, 10);
+    //    System.out.println(object1 == object2);
+    //    System.out.println(object1.equals(object2));
   }
 
-  public static void methodWithParam(AClass obj, int newValue) {
-    obj.aField = newValue;
+  public static void assignNewValue(Car obj, int newValue) {
+    obj.tankCapacity = newValue;
   }
 
-  public static void methodWithParam(int fieldValue, int newValue) {
+  public static void assignNewValue(int fieldValue, int newValue) {
     fieldValue = newValue;
   }
 
