@@ -5,6 +5,8 @@ package my.java.basic.classesAndObjects;
  */
 public class Car extends Vehicle implements Brakeable, Accelerateable {
 
+
+
   public int tankCapacity = 50;
 
   public Car() {
@@ -14,7 +16,8 @@ public class Car extends Vehicle implements Brakeable, Accelerateable {
     this.tankCapacity = tankCapacity;
   }
 
-  public void turnRight() {
+
+  public static void turnRight() {
     System.out.println("turnRight called");
   }
 

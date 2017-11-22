@@ -7,7 +7,10 @@ import java.math.BigDecimal;
  */
 public class Practice {
   public static void main(String[] args) {
-    //Write rectangle class that have 2 fields height and width and a method to return its area.
-    //Write some code in this main method that create an instance of rectangle and print its area.
+    //Write rectangle class that have 2 fields
+    // height and width and a method to return its area.
+
+    //Write some code in this main method that
+    // create an instance of rectangle and print its area.
   }
 }

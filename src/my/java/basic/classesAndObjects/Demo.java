@@ -1,6 +1,9 @@
 package my.java.basic.classesAndObjects;
 
 
+import my.java.basic.classesAndObjects.practice.Day;
+import my.java.basic.classesAndObjects.practice.Month;
+
 /**
  * Created by henry.jonathan on 11/20/2017
  */
@@ -15,10 +18,8 @@ public class Demo {
     System.out.println(object1.tankCapacity);
     System.out.println(object2.tankCapacity);
 
-    //    assignNewValue(object1, 10);
-    //    assignNewValue(object2, 10);
-    //    System.out.println(object1 == object2);
-    //    System.out.println(object1.equals(object2));
+    Month month = Month.DECEMBER;
+    System.out.println(month.name());
   }
 
   public static void assignNewValue(Car obj, int newValue) {

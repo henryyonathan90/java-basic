@@ -5,15 +5,16 @@ package my.java.basic.concurrency;
  */
 public class ThreadDemoSharedInstance {
   public static void main(String[] args) {
-    IncrementableInteger integer = new IncrementableInteger();
-    new Thread(new IntegerRunnable(integer)).start();
-    new Thread(new IntegerRunnable(integer)).start();
+    Counter counter = new Counter();
+
+    new Thread(new IncrementCounter(counter)).start();
+    new Thread(new IncrementCounter(counter)).start();
 
     try {
       Thread.sleep(1000);
     } catch (InterruptedException ex) {
     }
 
-    integer.printValue();
+    counter.printValue();
   }
 }
