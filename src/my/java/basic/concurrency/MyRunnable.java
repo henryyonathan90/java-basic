@@ -6,6 +6,11 @@ package my.java.basic.concurrency;
 public class MyRunnable implements Runnable {
   @Override
   public void run() {
-    System.out.println("Hello from thread");
+    try {
+      Thread.sleep(2000);
+      System.out.println("Hello from thread");
+    } catch (InterruptedException ex) {
+    }
+
   }
 }

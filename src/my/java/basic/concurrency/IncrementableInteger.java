@@ -7,7 +7,7 @@ public class IncrementableInteger {
   private int number = 0;
 
   public void increment() {
-    number++;
+    number += 1;
   }
 
   public void printValue() {

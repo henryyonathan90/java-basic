@@ -11,7 +11,7 @@ public class ThreadDemoInterrupt {
     try {
       Thread.sleep(5000);
       thread.interrupt();
-      Thread.sleep(5000);
+      Thread.sleep(1000);
     } catch (InterruptedException ex) {
     }
 

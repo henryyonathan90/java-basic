@@ -17,12 +17,12 @@ public class GenericDemo {
 //    unknownBox.content.doSomethingToOrange();
 //    ((Orange) unknownBox.content).doSomethingToOrange();
 
-    GenericBox<Orange> genericBox = new GenericBox<>();
-    genericBox.content = new Orange();
-    genericBox.content.doSomethingToOrange();
-
-    GenericBox<Apple> genericBox2 = new GenericBox<>();
-    genericBox2.content = new Apple();
-    genericBox2.content.doSomethingToApple();
+//    GenericBox<Orange> genericBox = new GenericBox<>();
+//    genericBox.content = new Orange();
+//    genericBox.content.doSomethingToOrange();
+//
+//    GenericBox<Apple> genericBox2 = new GenericBox<>();
+//    genericBox2.content = new Apple();
+//    genericBox2.content.doSomethingToApple();
   }
 }

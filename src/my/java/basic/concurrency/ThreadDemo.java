@@ -8,7 +8,8 @@ public class ThreadDemo {
     new Thread(new MyRunnable()).start();
 
     try {
-      Thread.sleep(1000);
+      System.out.println("Main method sleep");
+      Thread.sleep(5000);
     } catch (InterruptedException ex) {
     }
 
