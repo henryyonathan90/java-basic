@@ -1,18 +1,22 @@
 package my.java.basic.concurrency;
 
+import java.util.concurrent.Callable;
+
 /**
- * Created by henry.jonathan on 11/21/2017
+ * Created by henry.jonathan on 11/22/2017
  */
-public class InterruptedRunnable implements Runnable {
+public class MyCallable implements Callable<String> {
 
   @Override
-  public void run() {
+  public String call() throws Exception {
     System.out.println(Thread.currentThread().getName() + ": start");
+
     try {
-      Thread.sleep(10000);
+      Thread.sleep(5000);
     } catch (Exception ex) {
-      System.out.println(Thread.currentThread().getName() + ": Interrupted");
     }
+
     System.out.println(Thread.currentThread().getName() + ": finished");
+    return "String from callable";
   }
 }

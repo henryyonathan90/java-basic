@@ -16,7 +16,7 @@ public class TryCatchDemoCheckedException {
     }
   }
 
-  public static void methodB() throws Exception {
+  public static void methodB() throws Exception{
     methodC();
   }
 

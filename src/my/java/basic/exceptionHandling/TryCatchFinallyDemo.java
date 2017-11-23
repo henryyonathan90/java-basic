@@ -11,10 +11,8 @@ public class TryCatchFinallyDemo {
   public static void methodA() {
     try {
       methodB();
-    } catch (ArithmeticException e) {
-      System.out.println("ArithmeticException caught");
-    } catch (RuntimeException ex) {
-      System.out.println("RuntimeException caught");
+    } catch (NullPointerException e) {
+      System.out.println("NullPointerException caught");
     } finally {
       System.out.println("I will run no matter what");
     }
